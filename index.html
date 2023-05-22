@@ -3,68 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <title>Maximiliano</title>
+    <link rel="stylesheet" href="styleinindex.css" />
   </head>
   <body>
-    <img src="html12.jpg" alt="Пока грузит,почитай книгу!" width="200px">
-    <h1>Макс</h1>
-    <p><em>Я барбер с многолетним стажем и начинающий программист</p></em>
-    <p><strong>В моих интересах: крипто, спорт,психо</strong></p>
+    <div class="container">
+      <div class="info">
+        <img
+          src="html12.jpg"
+          alt="Пока грузит,почитай книгу!"
+          width="200px"
+          class="avatar"
+        />
+        <div class="info-text">
+          <h1>Макс</h1>
+          <p>Я барбер с многолетним стажем и начинающий программист</p>
+          <p>В моих интересах: крипто, спорт,психо</p>
+        </div>
+      </div>
+      <hr />
+      <div class="social">
+        <h2>Соцсети</h2>
 
-<hr>
-<h2>Соцсети</h2>
-<ul>
-    <li><a target="_blank" href="https://instagram.com
-        ">https://instagram.com</a></li>
-    <li><a target="_blank" href="https://vk.com">https://vk.com</a></li>
-</ul>
-<hr>
-<h2>Связь со мной</h2>
-<input type="submit" value="Связаться!">
-<br>
-<br>
-<form >
-  <label for="name">Ваше имя:</label>
-  <input type="text" id="name" placeholder="Начните вводить имя ">
-</form>
-<br>
-<form >
-  <label for="email">Почта:</label>
-  <input type="text" id="email" placeholder="Оставьте почту">
-</form>
-<br>
-<form >
-  <label for="text">Оставить сообщение:</label>
-  <br>
-  <textarea name="text" id="text" cols="20" rows="4"></textarea>
-</form>
-<hr>
-<h2>Хобби</h2>
- <ol>
-    <li>Секс</li>
-    <li>Рисование</li>
- </ol>
- <hr>
- <h2>Опыт работы</h2>
- <table border="2">
-  <tr>
-    <th>Компания</th>
-    <th>Должность</th>
-    <th>Срок</th>
-  </tr>
-    <tr>
-        <td>Glor</td>
-        <td>Forward</td>
-        <td>2018</td>
-    </tr>
-    <tr>
-        <td>Barber</td>
-        <td>Junior->Senior</td>
-        <td>2018-...</td>
-    </tr>
-    
- </table>
- <hr>
- <h2>Секретная зона</h2>
- <a target="_blank" href="double_index.html">Глянь</a>
+        <a
+          target="_blank"
+          href="https://instagram.com
+				 "
+          >insta</a
+        >
+        |
+        <a target="_blank" href="https://vk.com">vk</a>
+      </div>
+      <div class="card">
+        <div class="contact">
+          <h2>Связь со мной</h2>
+          <div class="row">
+            <div class="form-group">
+              <form>
+                <label for="name">Ваше имя:</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Начните вводить имя "
+                />
+              </form>
+            </div>
+            <div class="form-group">
+              <form>
+                <label for="email">Почта:</label>
+                <input type="text" id="email" placeholder="Оставьте почту" />
+              </form>
+            </div>
+          </div>
+          <div class="form-group">
+            <form>
+              <label for="text">Оставить сообщение:</label>
+
+              <textarea name="text" id="text" cols="20" rows="4"></textarea>
+            </form>
+          </div>
+
+          <input class="btn" type="submit" value="Связаться!" />
+        </div>
+      </div>
+      <div class="card">
+        <h2>Хобби</h2>
+        <ol class="list">
+          <li>Секс</li>
+          <li>Рисование</li>
+        </ol>
+
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>Delta</td>
+            <td>менеджер</td>
+            <td>2017</td>
+          </tr>
+          <tr>
+            <td>GloriaJeans</td>
+            <td>продавец</td>
+            <td>2018</td>
+          </tr>
+          <tr>
+            <td>Barber(all company)</td>
+            <td>от новичка до профи</td>
+            <td>2018- ныне</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
