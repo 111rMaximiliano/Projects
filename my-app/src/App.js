@@ -1,36 +1,36 @@
 import logo from "./logo.svg";
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export const App = () => {
-	// императивный, получить текущую дату
-	const [time, setTime] = useState(new Date()); //декларативный
+	const [time, setTime] = useState(new Date());
 	useEffect(() => {
 		const interval = setInterval(() => {
-			//декларативный
-			setTime(new Date()); //декларативный
+			setTime(new Date());
 		}, 1000);
-		return () => clearInterval(interval); //декларативный
+		return () => clearInterval(interval);
 	}, []);
-	const year = time.getFullYear(); // декларативный
-	// императивный, вернуть HTML разметку
-	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload 2.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-				<div className="App-link">{year}</div>
-			</header>
-		</div>
-	);
+	const year = time.getFullYear();
+
+	const appDiv = document.createElement("div");
+	appDiv.className = "App";
+	const appHeader = document.createElement("header");
+	appHeader.className = "App-header";
+	const appImg = document.createElement("img");
+	appImg.className = "App-logo";
+	appImg.src = { logo };
+	appImg.alt = "logo";
+	const appCode = document.createElement("code");
+	appCode.textContent = "src/App.js";
+	const appP = document.createElement("p");
+	appP.textContent = `'Edit' ${appCode} 'and save to reload 2.'`;
+	const appA = document.createElement("a");
+	appA.className = "App-link";
+	appA.href = "https://reactjs.org";
+	appA.target = "_blank";
+	appA.rel = "noopener noreferrer";
+	appA.textContent = "Learn React";
+	const appDiv1 = document.createElement("div");
+	appDiv1.className = "App-link";
+	appDiv1.textContent = { year };
 };
